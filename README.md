@@ -1,68 +1,13 @@
-# ruby-getting-started
+Data Reference: "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=editors&api_key=4d7847876fa96f67f881aaf1b73e0e30&format=json" 
+Here, Title is the primary key.
+# What aspect of the implementation did you find easy, if any, and why?
+I found the aspects that were similar to previous project relatively easier. Also, connecting with mongoDb and interacting with mongoDb was relatively easy too.
 
-A barebones Rails app, which can easily be deployed to Heroku.
+#What aspect of the implementation did you find hard, if any, and why? 
+Integrating MongoDb with the webpage/webapp was a little tricky. And also took me a little time on solving the animation and 20 entries per page part.
 
-This application support the [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby) article - check it out.
+#If you were to use these technologies professionally, what would be your biggest concern? 
+I think proper and smooth integration of these technologies will be a concern. Every technology has a different compatibility with other technologies, some might not even be compatible or face compatibility issues which needs to be solved. So,selecting the set of technologies would be my biggest concern professionally.
 
-## Running Locally
 
-Make sure you have Ruby installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
-
-```sh
-$ git clone git@github.com:heroku/ruby-getting-started.git
-$ cd ruby-getting-started
-$ bundle install
-$ bundle exec rake db:create db:migrate
-$ heroku local
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku master
-$ heroku run rake db:migrate
-$ heroku open
-```
-
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Docker
-
-The app can be run and tested using the [Heroku Docker CLI plugin](https://devcenter.heroku.com/articles/introduction-local-development-with-docker).
-
-Make sure the plugin is installed:
-
-    heroku plugins:install heroku-docker
-
-Configure Docker and Docker Compose:
-
-    heroku docker:init
-
-And run the app locally:
-
-    docker-compose up web
-
-The app will now be available on the Docker daemon IP on port 8080.
-
-To work with the local database and do migrations, you can open a shell:
-
-    docker-compose run shell
-    bundle exec rake db:migrate
-
-You can also use Docker to release to Heroku:
-
-    heroku create
-    heroku docker:release
-    heroku open
-
-## Documentation
-
-For more information about using Ruby on Heroku, see these Dev Center articles:
-
-- [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
 
