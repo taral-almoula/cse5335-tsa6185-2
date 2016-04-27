@@ -21,16 +21,25 @@ function getData(){
                             console.log(i);
 
                             //Reference: http://www.w3schools.com/jsref/prop_style_backgroundcolor.asp
-                            if(i%2 == 0)
+                            if(i/2 == 0)
                             {
                             document.body.style.backgroundColor = "cyan";
                             }
-                            if(i%3 == 0)
+                            else if(i/3 == 0)
                             {
                             document.body.style.backgroundColor = "red"    
                             }
-                            else{
-                            document.body.style.backgroundColor = "white";
+                            else if(i/5 == 0)
+                            {
+                            document.body.style.backgroundColor = "green";
+                            }
+                            else if(i/7 == 0)
+                            {
+                            document.body.style.backgroundColor = "yellow"    
+                            }
+                            else
+                            {
+                            document.body.style.backgroundColor = "white"    
                             }
 
                             //Reference: http://www.w3schools.com/css/css_syntax.asp
