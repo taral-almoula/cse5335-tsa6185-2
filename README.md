@@ -1,5 +1,5 @@
 Data Reference: "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=editors&api_key=4d7847876fa96f67f881aaf1b73e0e30&format=json" 
-Here, Title is the primary key.
+
 # What aspect of the implementation did you find easy, if any, and why?
 I found the aspects that were similar to previous project relatively easier. Also, connecting with mongoDb and interacting with mongoDb was relatively easy too.
 
